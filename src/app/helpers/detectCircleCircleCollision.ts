@@ -1,4 +1,4 @@
-import { ICollisionResult } from "../interfaces/gameState";
+import { ICollisionResult } from "../interfaces/public";
 import { distanceBetweenPoints } from "./distanceBetweenPoints";
 
 /**

@@ -1,5 +1,5 @@
 import { Mesh, CylinderGeometry, MeshPhongMaterial } from "three";
-import { IPowerUp } from "../interfaces/gameState";
+import { IPowerUp } from "../interfaces/public";
 
 export class PowerUp extends Mesh {
   public powerUpId: number = 0;

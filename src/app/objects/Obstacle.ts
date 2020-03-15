@@ -1,5 +1,5 @@
 import { Mesh, LineBasicMaterial, Geometry, Line, Vector3 } from "three";
-import { IObstacle } from "../interfaces/gameState";
+import { IObstacle } from "../interfaces/interfaces";
 
 export class Obstacle extends Mesh {
   constructor(obstacle: IObstacle) {

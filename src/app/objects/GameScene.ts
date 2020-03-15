@@ -27,7 +27,7 @@ import {
   IBulletTrail,
   IObstacle,
   IPowerUp
-} from "../interfaces/gameState";
+} from "../interfaces/interfaces";
 import { BulletTrailObject } from "./BulletTrail";
 import { Obstacle } from "./Obstacle";
 import { PowerUp } from "./PowerUp";

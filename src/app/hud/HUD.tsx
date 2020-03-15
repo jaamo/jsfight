@@ -1,5 +1,5 @@
 import React from "react";
-import { IGameState, IRobot, IRobotState } from "../interfaces/gameState";
+import { IGameState, IRobot, IRobotState } from "../interfaces/public";
 import styled from "styled-components";
 
 const HUDElement = styled.div`

@@ -1,3 +1,5 @@
+import { Vector2 } from "three";
+
 export interface IRobot {
   tick(state: IGameState): IRobotOutput;
   getName(): string;
@@ -68,4 +70,9 @@ export interface ICollisionPoint {
   y?: number;
   dist?: number;
   collides?: boolean;
+}
+
+export interface IJSFightMap {
+  obstacles: Array<IObstacle>;
+  powerUpLocations: Array<Vector2>;
 }

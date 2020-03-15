@@ -1,5 +1,5 @@
 import { Mesh, LineBasicMaterial, Geometry, Line, Vector3 } from "three";
-import { IBulletTrail } from "../interfaces/gameState";
+import { IBulletTrail } from "../interfaces/public";
 
 export class BulletTrailObject extends Mesh {
   private maxLifetime: number = 10;
