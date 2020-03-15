@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 246.87 254.02" style="enable-background:new 0 0 246.87 254.02;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'Arial-BoldMT';}
+	.st2{font-size:6.4244px;}
+	.st3{font-family:'ArialMT';}
+	.st4{font-size:4.8183px;}
+	.st5{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<rect x="24.1" y="34.4" class="st0" width="201.68" height="201.68"/>
+<circle class="st0" cx="57.24" cy="67.35" r="6.9"/>
+<circle class="st0" cx="203.83" cy="213.36" r="2.09"/>
+<line class="st0" x1="80.64" y1="81.6" x2="80.64" y2="191.64"/>
+<text transform="matrix(1 0 0 1 67.6211 64.3958)"><tspan x="0" y="0" class="st1 st2">Robot</tspan><tspan x="0" y="5.78" class="st3 st4">Shape: Circle </tspan><tspan x="0" y="11.56" class="st3 st4">Diameter: 25</tspan></text>
+<text transform="matrix(1 0 0 1 86.7051 128.518)"><tspan x="0" y="0" class="st1 st2">Obstacle</tspan><tspan x="0" y="5.78" class="st3 st4">Shape: Circle </tspan></text>
+<text transform="matrix(1 0 0 1 24.0968 17.3444)"><tspan x="0" y="0" class="st1 st2">Arena</tspan><tspan x="0" y="5.78" class="st3 st4">Size: 1000 x 1000</tspan></text>
+<text transform="matrix(1 0 0 1 16.4339 144.8623)" class="st1 st2">Y</text>
+<text transform="matrix(1 0 0 1 132.181 30.4569)" class="st1 st2">X</text>
+<text transform="matrix(1 0 0 1 169.0752 209.6815)"><tspan x="0" y="0" class="st1 st2">PowerUp</tspan><tspan x="0" y="5.78" class="st3 st4">Shape: Circle </tspan><tspan x="0" y="11.56" class="st3 st4">Diameter: 10</tspan></text>
+<g>
+	<g>
+		<line class="st5" x1="24.1" y1="28.45" x2="126.49" y2="28.45"/>
+		<g>
+			<polygon points="125.76,30.94 130.08,28.45 125.76,25.96 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st5" x1="18.39" y1="34.4" x2="18.39" y2="133.03"/>
+		<g>
+			<polygon points="15.9,132.3 18.39,136.62 20.89,132.3 			"/>
+		</g>
+	</g>
+</g>
+</svg>
