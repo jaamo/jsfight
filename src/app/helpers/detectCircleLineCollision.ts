@@ -1,5 +1,5 @@
 import { distanceBetweenPoints } from "./distanceBetweenPoints";
-import { ICollisionResult, ICollisionPoint } from "../interfaces/public";
+import { ICollisionResult, ICollisionPoint } from "../interfaces/interfaces";
 
 /**
  * Check if given circle collides with given line.

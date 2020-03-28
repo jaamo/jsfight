@@ -1,4 +1,4 @@
-import { IGameState, IRobot, IRobotOutput } from "../interfaces/public";
+import { IGameState, IRobot, IRobotOutput } from "../interfaces/interfaces";
 
 export default class Robot implements IRobot {
   private output: IRobotOutput = {

@@ -1,5 +1,4 @@
-import { ICollisionResult, IObstacle } from "../interfaces/public";
-import { distanceBetweenPoints } from "./distanceBetweenPoints";
+import { ICollisionResult, IObstacle } from "../interfaces/interfaces";
 import { detectLineLineCollision } from "./detectLineLineCollission";
 
 /**
