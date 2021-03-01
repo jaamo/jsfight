@@ -17,7 +17,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "styled-components": "^5.0.1",
-    "three": "^0.113.2",
+    "three": "^0.125.0",
     "three-orbitcontrols-ts": "^0.1.2",
     "ts-jest": "^25.2.1"
   },
