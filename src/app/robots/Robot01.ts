@@ -6,7 +6,7 @@ export default class Robot implements IRobot {
     reverse: false,
     left: false,
     right: false,
-    gunShoot: false
+    gunShoot: false,
   };
 
   constructor() {

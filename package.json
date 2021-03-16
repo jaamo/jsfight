@@ -17,8 +17,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "styled-components": "^5.0.1",
-    "three": "^0.113.2",
-    "three-orbitcontrols-ts": "^0.1.2",
+    "three": "^0.126.1",
     "ts-jest": "^25.2.1"
   },
   "devDependencies": {
@@ -26,6 +25,7 @@
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "@babel/preset-env": "^7.8.7",
     "@babel/preset-react": "^7.8.3",
+    "@types/three": "^0.126.1",
     "babel-loader": "^8.0.6",
     "jest": "^25.1.0",
     "ts-loader": "^6.2.1",

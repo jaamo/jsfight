@@ -1,4 +1,10 @@
-import { Mesh, LineBasicMaterial, Geometry, Line, Vector3 } from "three";
+import {
+  Mesh,
+  LineBasicMaterial,
+  BufferGeometry,
+  Line,
+  BufferAttribute,
+} from "three";
 import { IBulletTrail } from "../interfaces/interfaces";
 
 export class BulletTrailObject extends Mesh {
@@ -6,7 +12,7 @@ export class BulletTrailObject extends Mesh {
   private lifetime: number = 0;
   private trailMaterial: LineBasicMaterial = new LineBasicMaterial({
     color: 0xffffff,
-    transparent: true
+    transparent: true,
   });
 
   constructor(bulletTrail: IBulletTrail) {
@@ -14,11 +20,22 @@ export class BulletTrailObject extends Mesh {
 
     this.lifetime = this.maxLifetime;
 
-    const bulletTrailGeometry: Geometry = new Geometry();
-    bulletTrailGeometry.vertices.push(
-      new Vector3(bulletTrail.startX, 2, bulletTrail.startY),
-      new Vector3(bulletTrail.endX, 2, bulletTrail.endY)
+    // Define geometry
+    const bulletTrailGeometry: BufferGeometry = new BufferGeometry();
+    const bulletTrailVertices = new Float32Array([
+      bulletTrail.startX,
+      2,
+      bulletTrail.startY,
+      bulletTrail.endX,
+      2,
+      bulletTrail.endY,
+    ]);
+    bulletTrailGeometry.setAttribute(
+      "position",
+      new BufferAttribute(bulletTrailVertices, 3)
     );
+
+    // Add line
     const trail = new Line(bulletTrailGeometry, this.trailMaterial);
     this.add(trail);
   }

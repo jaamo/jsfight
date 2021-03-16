@@ -7,16 +7,13 @@ import {
   PointLight,
   Clock,
   Vector2,
-  LineBasicMaterial,
-  Geometry,
-  Line
 } from "three";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
 import { FilmPass } from "three/examples/jsm/postprocessing/FilmPass.js";
 import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPass.js";
 import { CopyShader } from "three/examples/jsm/shaders/CopyShader.js";
-import { OrbitControls } from "three-orbitcontrols-ts";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { Robot } from "./Robot";
 import { Axis } from "./Axis";
 import { Arena } from "./Arena";
@@ -26,7 +23,7 @@ import {
   IRobotState,
   IBulletTrail,
   IObstacle,
-  IPowerUp
+  IPowerUp,
 } from "../interfaces/interfaces";
 import { BulletTrailObject } from "./BulletTrail";
 import { Obstacle } from "./Obstacle";
@@ -44,7 +41,7 @@ export class GameScene {
   );
   private readonly renderer: WebGLRenderer = new WebGLRenderer({
     antialias: true,
-    canvas: document.getElementById("main-canvas") as HTMLCanvasElement
+    canvas: document.getElementById("main-canvas") as HTMLCanvasElement,
   });
   private readonly composer: EffectComposer;
   private readonly clock: Clock = new Clock();
@@ -69,7 +66,7 @@ export class GameScene {
     const arena: Arena = new Arena();
     this.scene.add(arena);
 
-    // Add exis.
+    // Add axis.
     const axis: Axis = new Axis();
     // this.scene.add(axis);
 

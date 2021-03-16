@@ -12,7 +12,7 @@ import {
   ICollisionResult,
   PowerUpType,
   IPowerUp,
-  IJSFightMap
+  IJSFightMap,
 } from "./interfaces/interfaces";
 import { MapGenerator } from "./classes/MapGenerator";
 import Robot01 from "./robots/Robot01";
@@ -47,7 +47,7 @@ export class App {
       robots: [],
       bulletTrails: [],
       obstables: [],
-      powerUps: []
+      powerUps: [],
     };
 
     // Init 3D scene.
@@ -142,7 +142,7 @@ export class App {
       gunCooldown: 0,
       name: robot01.getName(),
       health: 100,
-      robotId: 1
+      robotId: 1,
     });
     const robot02: Robot02 = new Robot02();
     this.robots.push(robot02);
@@ -156,7 +156,7 @@ export class App {
       gunCooldown: 0,
       name: robot02.getName(),
       health: 100,
-      robotId: 2
+      robotId: 2,
     });
   }
 
@@ -267,7 +267,8 @@ export class App {
             1000,
         endY:
           this.gameState.robots[robotIndex].y +
-          Math.cos(this.gameState.robots[robotIndex].angle + Math.PI / 2) * 1000
+          Math.cos(this.gameState.robots[robotIndex].angle + Math.PI / 2) *
+            1000,
       };
 
       // Check closest bullet trail collision to an obstacle.
@@ -362,7 +363,7 @@ export class App {
         new Vector2(900, 100),
         new Vector2(900, 900),
         new Vector2(100, 900),
-        new Vector2(500, 500)
+        new Vector2(500, 500),
       ];
       const powerUpPosition: Vector2 =
         powerUpPositions[Math.floor(Math.random() * powerUpPositions.length)];
@@ -372,7 +373,7 @@ export class App {
         y: powerUpPosition.y,
         lifetime: 1000,
         id: 1,
-        type: PowerUpType.FullHealth
+        type: PowerUpType.FullHealth,
       };
       this.gameState.powerUps.push(healthPowerUp);
       this.game.addPowerUp(healthPowerUp);
