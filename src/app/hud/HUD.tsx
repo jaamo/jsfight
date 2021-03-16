@@ -71,7 +71,8 @@ export default function HUD(props: IHUDProps) {
             <Property>
               <PropertyLabel>angle:</PropertyLabel>
               <PropertyValue>
-                {Math.round((robot.angle * 180) % 360)}°
+                {robot.angle.toFixed(2)}RAD /{" "}
+                {Math.round(robot.angle * (180 / Math.PI))}°
               </PropertyValue>
             </Property>
             <Property>
