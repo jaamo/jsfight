@@ -20,6 +20,7 @@ import Robot02 from "./robots/Robot02";
 import { detectCircleLineCollision } from "./helpers/detectCircleLineCollision";
 import { detectLineObstaclesCollision } from "./helpers/detectLineObstaclesCollision";
 import { detectCircleCircleCollision } from "./helpers/detectCircleCircleCollision";
+import { simplifyAngle } from "./helpers/simplifyAngle";
 import HUD from "./hud/Hud";
 
 export class App {
@@ -173,14 +174,18 @@ export class App {
   }
 
   /**
-   * Calculate robot rotation. Returns a new robot.
+   * Calculate robot rotation.
    */
   handleRotation(robotIndex: number, output: IRobotOutput): void {
     if (output.left) {
-      this.gameState.robots[robotIndex].angle += (3 * Math.PI) / 180;
+      this.gameState.robots[robotIndex].angle = simplifyAngle(
+        this.gameState.robots[robotIndex].angle + (3 * Math.PI) / 180
+      );
     }
     if (output.right) {
-      this.gameState.robots[robotIndex].angle -= (3 * Math.PI) / 180;
+      this.gameState.robots[robotIndex].angle = simplifyAngle(
+        this.gameState.robots[robotIndex].angle - (3 * Math.PI) / 180
+      );
     }
   }
 
